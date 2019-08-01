@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradient Background</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="gradient">
+	<h1>Gradient Background Generator</h1>
+
+	<div class="options-container">
+		<div class="step-one">
+			<p>Step 1. Select your input type: </p>
+			<div class="btn-group btn-group-toggle" data-toggle="buttons">
+			  <label class="btn btn-secondary active activeRGB">
+			    <input type="radio" name="RGBHEX" id="radioRGB" autocomplete="off" checked>RGB
+			  </label>
+			  <label class="btn btn-secondary activeHEX">
+			    <input type="radio" name="RGBHEX" id="radioHEX" autocomplete="off">HEX
+			  </label>
+			</div>
+		</div>
+		<br />
+		<div class="step-two">
+			<p>Step 2. Indicate whether you would like to update the color gradient on the left or right of the webpage:</p>
+			<select class="leftRight">
+				<option id="left" value="left" selected="selected">Left</option>
+				<option id="right" value="right">Right</option>
+			</select>
+		</div>
+		<br />
+		<div id="inputsRGB" class="show">
+			<p> Step 3. Enter your RGB color values: </p>
+			<div class="step3style">
+				<div>
+					<p>R:</p><input id="valR" type="text" name="R" value="255" maxlength="3" size="3">
+				</div>
+				<div>
+					<p>G:</p><input id="valG" type="text" name="G" value="0" maxlength="3" size="3">
+				</div>
+				<div>
+					<p>B:</p><input id="valB" type="text" name="B" value="0" maxlength="3" size="3">
+				</div>
+			</div>
+		</div>
+		<div id="inputsHEX" class="hide">
+			<p> Step 3: Enter your HEX color value: </p>
+			<div>
+				<p>#</p><input id="valHEX" class="R" type="text" name="R" value="FF0000" maxlength="6" size="6">
+			</div>
+		</div>
+		<br />
+		<div class="update-button">
+			<p> Step 4: Update the Gradient Background! </p>
+			<button id="update">Update</button>
+		</div>
+	</div>
+	<br />
+
+	<div class="color-wheel">
+		<p>
+			Optional:  Use the left and right color wheels below to update the color gradients:
+		</p>
+		<input class="color1" type="color" name="color1" value="#FF0000">
+		<input class="color2" type="color" name="color2" value="#0000FF">
+	</div>
+	<br />
+
+	<div class='output-container'>
+		<h3 class="colorTitle">RGB:</h3>
+		<h3 id="rgbOut"></h3>
+		<h3  class="colorTitle">HEX:</h3>
+		<h3 id="hexOut"></h3>
+	</div>
+
+	<div class="random-container">
+			<button id="random">Random Colors!</button>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+	font: 'Raleway', sans-serif;
+  color: rgba(255,255,255,.7);
+  top: 10%;
+	background-image: linear-gradient(to right, #FF0000 , #0000FF); /* Standard syntax */
+}
+
+h1 {
+	text-align: center;
+	margin: 16px auto;
+  font: 32px 'Raleway', sans-serif;
+  color: rgba(255,255,255,.7);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  width: 100%;
+}
+
+.options-container{
+	text-align: center;
+	align-items: center;  /* vertical align */
+}
+
+p{
+	margin: 4px;
+	letter-spacing: 2px;
+}
+
+.btn-group{
+	border: 2px solid #A9A9A9;
+	border-radius: 6px;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+.leftRight{
+	color: white;
+	background-color: #696969;
+	border: 2px solid #A9A9A9;
+	border-radius: 5px;
+	padding: 6px;
+}
+
+.leftRight:hover{
+	background-color: grey;
+	cursor: pointer;
+}
+
+.show div{
+	display: flex;
+	align-items: center;  /* vertical align */
+	justify-content: center;
+}
+
+.step3style p{
+	margin-left: 10px;
+}
+
+.show input{
+	color: white;
+	background-color: #696969;
+	border: 2px solid #A9A9A9;
+	border-radius: 5px;
+	padding: 6px;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.hide{
+  display:none;
+}
+
+.color-wheel {
+	text-align: center;
+	align-items: center;  /* vertical align */
+}
+
+h2 {
+	text-align: center;
+	margin: 16px auto;
+  font: 18px 'Raleway', sans-serif;
+  color: rgba(255,255,255,.7);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  width: 100%;
+}
+
+.colorTitle {
+	margin-bottom: 4px;
+}
+
+.output-container {
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 4px;
+}
+
+h3 {
+	text-align: center;
+  font: 18px 'Raleway', sans-serif;
+  color: rgba(255,255,255,.7);
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+.random-container{
+	margin: 8px;
+	text-align: center;
+}
+
+button{
+	color: white;
+	background-color: #696969;
+	border: 2px solid #A9A9A9;
+	border-radius: 5px;
+	padding: 6px;
+	margin-top: 2px;
+	text-align: center;
+}
+
+button:hover{
+	background-color:grey;
+}
